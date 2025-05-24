@@ -643,7 +643,7 @@ conf t
     id mac d832.e38f.7b45
     number 1 dn 1
     dtmf-relay sip-notify
-    username admin password pass
+    username 4299 password 4299
     codec g711ulaw
 !
   voice register pool 2
@@ -657,7 +657,7 @@ conf t
 config t
 !
 dial-peer voice 42 voip
-destination-pattern k..
+destination-pattern 41..
 session protocol sipv2
 session target sip-server
 codec g711ulaw
