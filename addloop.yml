@@ -1,0 +1,13 @@
+---
+- name: addloop
+  hosts: ctaas
+  gather_facts: no
+  become: yes
+  tasks:
+    - name: Create Loop
+      ios_command: 
+        commands:
+          - conf t
+          - int lo 10
+          - ip add 10.10.10.10 255.255.255.255
+          - end
