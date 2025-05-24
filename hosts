@@ -1,6 +1,5 @@
 [ctaas]
 10.42.1.2
-
 [ctaas:vars]
 ansible_user=admin
 ansible_password=pass
